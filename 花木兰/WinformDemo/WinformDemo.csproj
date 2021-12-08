@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6C4E151-5641-48DE-B87F-C5EBED51ED7B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinformDemo</RootNamespace>
+    <AssemblyName>WinformDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForm.Designer.cs">
+      <DependentUpon>AllForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoForm.Designer.cs">
+      <DependentUpon>DemoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\Form\FormExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\Form\FormExtForm.Designer.cs">
+      <DependentUpon>FormExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\ListBoxExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\ListBoxExtForm.designer.cs">
+      <DependentUpon>ListBoxExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\MaskingExt\MaskingExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\MaskingExt\MaskingExtForm.Designer.cs">
+      <DependentUpon>MaskingExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\MessageBoxExt\MessageBoxExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\MessageBoxExt\MessageBoxExtForm.Designer.cs">
+      <DependentUpon>MessageBoxExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\RadioButtonExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\RadioButtonExtForm.Designer.cs">
+      <DependentUpon>RadioButtonExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\CheckBoxExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\CheckBoxExtForm.Designer.cs">
+      <DependentUpon>CheckBoxExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\HalvingLineExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\HalvingLineExtForm.Designer.cs">
+      <DependentUpon>HalvingLineExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\AlertFormExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\AlertFormExtForm.Designer.cs">
+      <DependentUpon>AlertFormExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\FisheyeMenuExt\FisheyeMenuExtComponentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\FisheyeMenuExt\FisheyeMenuExtComponentForm.Designer.cs">
+      <DependentUpon>FisheyeMenuExtComponentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\MeterExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\MeterExtForm.Designer.cs">
+      <DependentUpon>MeterExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\RadianMenuExt\RadianMenuExtComponentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\RadianMenuExt\RadianMenuExtComponentForm.Designer.cs">
+      <DependentUpon>RadianMenuExtComponentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\SlideMenuExt\SlideMenuExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\SlideMenuExt\SlideMenuExtForm.Designer.cs">
+      <DependentUpon>SlideMenuExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\SlideMenuExt\SlideMenuPanelExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\SlideMenuExt\SlideMenuPanelExtForm.Designer.cs">
+      <DependentUpon>SlideMenuPanelExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\TextCarouselExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\TextCarouselExtForm.Designer.cs">
+      <DependentUpon>TextCarouselExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\ProcedureExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\ProcedureExtForm.Designer.cs">
+      <DependentUpon>ProcedureExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\PercentageProgressExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\PercentageProgressExtForm.Designer.cs">
+      <DependentUpon>PercentageProgressExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\ValidCodeExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\ValidCodeExtForm.designer.cs">
+      <DependentUpon>ValidCodeExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\WaveProgressExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\WaveProgressExtForm.Designer.cs">
+      <DependentUpon>WaveProgressExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\SwitchButtonExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\SwitchButtonExtForm.Designer.cs">
+      <DependentUpon>SwitchButtonExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\FisheyeMenuExt\FisheyeMenuExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\FisheyeMenuExt\FisheyeMenuExtForm.Designer.cs">
+      <DependentUpon>FisheyeMenuExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\ChartExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\ChartExtForm.Designer.cs">
+      <DependentUpon>ChartExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\MultidropSlideBarExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\MultidropSlideBarExtForm.Designer.cs">
+      <DependentUpon>MultidropSlideBarExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\ToolTipExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\ToolTipExtForm.Designer.cs">
+      <DependentUpon>ToolTipExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\DatePickerExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\DatePickerExtForm.Designer.cs">
+      <DependentUpon>DatePickerExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\ColorExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\ColorExtForm.Designer.cs">
+      <DependentUpon>ColorExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\RadarChartExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\RadarChartExtForm.Designer.cs">
+      <DependentUpon>RadarChartExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\JigsawValidExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\JigsawValidExtForm.Designer.cs">
+      <DependentUpon>JigsawValidExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\PatternLockExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\PatternLockExtForm.Designer.cs">
+      <DependentUpon>PatternLockExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\GroupPanelExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\GroupPanelExtForm.Designer.cs">
+      <DependentUpon>GroupPanelExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\TimerExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\TimerExtForm.Designer.cs">
+      <DependentUpon>TimerExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\NavigationBarExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\NavigationBarExtForm.Designer.cs">
+      <DependentUpon>NavigationBarExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\LoadExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\LoadExtForm.Designer.cs">
+      <DependentUpon>LoadExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\RadarScanExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\RadarScanExtForm.Designer.cs">
+      <DependentUpon>RadarScanExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\ThermometerExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\ThermometerExtForm.Designer.cs">
+      <DependentUpon>ThermometerExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\NumberTimeExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\NumberTimeExtForm.Designer.cs">
+      <DependentUpon>NumberTimeExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\ImageExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\ImageExtForm.Designer.cs">
+      <DependentUpon>ImageExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\ButtonExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\ButtonExtForm.Designer.cs">
+      <DependentUpon>ButtonExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\RadianMenuExt\RadianMenuExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\RadianMenuExt\RadianMenuExtForm.Designer.cs">
+      <DependentUpon>RadianMenuExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\GradualProgressExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\GradualProgressExtForm.Designer.cs">
+      <DependentUpon>GradualProgressExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\ImageCarouselExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\ImageCarouselExtForm.Designer.cs">
+      <DependentUpon>ImageCarouselExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\ImageWhirligigExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\ImageWhirligigExtForm.Designer.cs">
+      <DependentUpon>ImageWhirligigExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\TabControlExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\TabControlExtForm.Designer.cs">
+      <DependentUpon>TabControlExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="窗体\工具栏\ContextMenuStripExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\工具栏\ContextMenuStripExtForm.Designer.cs">
+      <DependentUpon>ContextMenuStripExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\工具栏\MenuStripExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\工具栏\MenuStripExtForm.Designer.cs">
+      <DependentUpon>MenuStripExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\工具栏\StatusStripExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\工具栏\StatusStripExtForm.Designer.cs">
+      <DependentUpon>StatusStripExtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="窗体\工具栏\ToolStripExtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\工具栏\ToolStripExtForm.Designer.cs">
+      <DependentUpon>ToolStripExtForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AllForm.resx">
+      <DependentUpon>AllForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemoForm.resx">
+      <DependentUpon>DemoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\Form\FormExtForm.resx">
+      <DependentUpon>FormExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\ListBoxExtForm.resx">
+      <DependentUpon>ListBoxExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\MaskingExt\MaskingExtForm.resx">
+      <DependentUpon>MaskingExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\MessageBoxExt\MessageBoxExtForm.resx">
+      <DependentUpon>MessageBoxExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\RadioButtonExtForm.resx">
+      <DependentUpon>RadioButtonExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\CheckBoxExtForm.resx">
+      <DependentUpon>CheckBoxExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\HalvingLineExtForm.resx">
+      <DependentUpon>HalvingLineExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\AlertFormExtForm.resx">
+      <DependentUpon>AlertFormExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\FisheyeMenuExt\FisheyeMenuExtComponentForm.resx">
+      <DependentUpon>FisheyeMenuExtComponentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\MeterExtForm.resx">
+      <DependentUpon>MeterExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\RadianMenuExt\RadianMenuExtComponentForm.resx">
+      <DependentUpon>RadianMenuExtComponentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\SlideMenuExt\SlideMenuExtForm.resx">
+      <DependentUpon>SlideMenuExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\SlideMenuExt\SlideMenuPanelExtForm.resx">
+      <DependentUpon>SlideMenuPanelExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\TextCarouselExtForm.resx">
+      <DependentUpon>TextCarouselExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\ProcedureExtForm.resx">
+      <DependentUpon>ProcedureExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\PercentageProgressExtForm.resx">
+      <DependentUpon>PercentageProgressExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\ValidCodeExtForm.resx">
+      <DependentUpon>ValidCodeExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\WaveProgressExtForm.resx">
+      <DependentUpon>WaveProgressExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\SwitchButtonExtForm.resx">
+      <DependentUpon>SwitchButtonExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\FisheyeMenuExt\FisheyeMenuExtForm.resx">
+      <DependentUpon>FisheyeMenuExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\ChartExtForm.resx">
+      <DependentUpon>ChartExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\MultidropSlideBarExtForm.resx">
+      <DependentUpon>MultidropSlideBarExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\ToolTipExtForm.resx">
+      <DependentUpon>ToolTipExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\DatePickerExtForm.resx">
+      <DependentUpon>DatePickerExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\ColorExtForm.resx">
+      <DependentUpon>ColorExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\RadarChartExtForm.resx">
+      <DependentUpon>RadarChartExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\JigsawValidExtForm.resx">
+      <DependentUpon>JigsawValidExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\PatternLockExtForm.resx">
+      <DependentUpon>PatternLockExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\GroupPanelExtForm.resx">
+      <DependentUpon>GroupPanelExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\TimerExtForm.resx">
+      <DependentUpon>TimerExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\NavigationBarExtForm.resx">
+      <DependentUpon>NavigationBarExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\LoadExtForm.resx">
+      <DependentUpon>LoadExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\RadarScanExtForm.resx">
+      <DependentUpon>RadarScanExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\ThermometerExtForm.resx">
+      <DependentUpon>ThermometerExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\NumberTimeExtForm.resx">
+      <DependentUpon>NumberTimeExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\RadianMenuExt\RadianMenuExtForm.resx">
+      <DependentUpon>RadianMenuExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\ImageExtForm.resx">
+      <DependentUpon>ImageExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\ButtonExtForm.resx">
+      <DependentUpon>ButtonExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\TabControlExtForm.resx">
+      <DependentUpon>TabControlExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\GradualProgressExtForm.resx">
+      <DependentUpon>GradualProgressExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\ImageCarouselExtForm.resx">
+      <DependentUpon>ImageCarouselExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\ImageWhirligigExtForm.resx">
+      <DependentUpon>ImageWhirligigExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\工具栏\ContextMenuStripExtForm.resx">
+      <DependentUpon>ContextMenuStripExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\工具栏\MenuStripExtForm.resx">
+      <DependentUpon>MenuStripExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\工具栏\StatusStripExtForm.resx">
+      <DependentUpon>StatusStripExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="窗体\工具栏\ToolStripExtForm.resx">
+      <DependentUpon>ToolStripExtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\动态图片.gif" />
+    <None Include="Resources\静态图片.png" />
+    <None Include="Resources\Adobe1.png" />
+    <None Include="Resources\Adobe2.png" />
+    <None Include="Resources\Adobe3.png" />
+    <None Include="Resources\Adobe4.png" />
+    <None Include="Resources\Adobe5.png" />
+    <None Include="Resources\Adobe6.png" />
+    <None Include="Resources\Adobe7.png" />
+    <None Include="Resources\Adobe8.png" />
+    <None Include="Resources\Adobe9.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\8.png" />
+    <None Include="Resources\9.png" />
+    <None Include="Resources\validimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WcleAnimationLibrary\WcleAnimationLibrary.csproj">
+      <Project>{BCA4D193-8E66-4335-B553-D8778E950688}</Project>
+      <Name>WcleAnimationLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinformControlLibraryExtension\WinformControlLibraryExtension.csproj">
+      <Project>{35145425-d3a3-43e1-bd52-d3446bd37974}</Project>
+      <Name>WinformControlLibraryExtension</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GroupPanelTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\火车.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\飞机.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\云20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\云25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\云块20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\画笔路径.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menutab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\新建文本文档.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_collapse_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_collapse_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <None Include="Resources\demomenu_validcode.png" />
+    <None Include="Resources\demomenu_listbox.png" />
+    <None Include="Resources\toolstrip_text_italic.png" />
+    <None Include="Resources\toolstrip_shape_align_top.png" />
+    <None Include="Resources\toolstrip_shape_align_right.png" />
+    <None Include="Resources\toolstrip_shape_align_middle.png" />
+    <None Include="Resources\toolstrip_shape_align_left.png" />
+    <None Include="Resources\toolstrip_shape_align_center.png" />
+    <None Include="Resources\toolstrip_shape_align_bottom.png" />
+    <None Include="Resources\toolstrip_save.png" />
+    <None Include="Resources\toolstrip_right.png" />
+    <None Include="Resources\toolstrip_paste.png" />
+    <None Include="Resources\toolstrip_othersave.png" />
+    <None Include="Resources\toolstrip_open.png" />
+    <None Include="Resources\toolstrip_new.png" />
+    <None Include="Resources\toolstrip_left.png" />
+    <None Include="Resources\toolstrip_cut.png" />
+    <None Include="Resources\toolstrip_copy.png" />
+    <None Include="Resources\toolstrip_center.png" />
+    <None Include="Resources\statusstrip_versions.png" />
+    <None Include="Resources\toolstrip_window3.png" />
+    <None Include="Resources\toolstrip_window2.png" />
+    <None Include="Resources\toolstrip_window1.png" />
+    <None Include="Resources\toolstrip_text_lowercase_a.png" />
+    <None Include="Resources\toolstrip_text_list_numbers.png" />
+    <None Include="Resources\toolstrip_text_list_bullets.png" />
+    <None Include="Resources\toolstrip_text_linespacing.png" />
+    <None Include="Resources\toolstrip_text_letterspacing.png" />
+    <None Include="Resources\toolstrip_text_letter_omega.png" />
+    <None Include="Resources\toolstrip_text_left_to_right.png" />
+    <None Include="Resources\toolstrip_text_kerning.png" />
+    <None Include="Resources\demomenu_contextmenustrip.png" />
+    <None Include="Resources\demomenu_message.png" />
+    <None Include="Resources\message_custom.png" />
+    <None Include="Resources\demomenu_masking.png" />
+    <None Include="Resources\demomenu_textcarousel.png" />
+    <None Include="Resources\demomenu_fisheyebar.png" />
+    <None Include="Resources\demomenu_color.png" />
+    <None Include="Resources\demomenu_imagecarousel.png" />
+    <None Include="Resources\demomenu_percentagebar.png" />
+    <None Include="Resources\demomenu_button.png" />
+    <None Include="Resources\demomenu_loadprogress.png" />
+    <None Include="Resources\demomenu_sepprocess.png" />
+    <None Include="Resources\demomenu_numbertime.png" />
+    <None Include="Resources\demomenu_image.png" />
+    <None Include="Resources\demomenu_toggleswitch.png" />
+    <None Include="Resources\demomenu_progress.png" />
+    <None Include="Resources\demomenu_radarchart.png" />
+    <None Include="Resources\demomenu_timer.png" />
+    <None Include="Resources\demomenu_thermometer.png" />
+    <None Include="Resources\demomenu_patternlock.png" />
+    <None Include="Resources\demomenu_jigsawslide.png" />
+    <None Include="Resources\demomenu_chart.png" />
+    <None Include="Resources\demomenu_meterbar.png" />
+    <None Include="Resources\demomenu_waveprogress.png" />
+    <None Include="Resources\demomenu_radar.png" />
+    <None Include="Resources\demomenu_halvingline.png" />
+    <None Include="Resources\demomenu_radio.png" />
+    <None Include="Resources\demomenu_checkbox.png" />
+    <None Include="Resources\demomenu_navigationbar.png" />
+    <None Include="Resources\demomenu_menupanel.png" />
+    <None Include="Resources\demomenu_grouppanel.png" />
+    <None Include="Resources\demomenu_tabcontrol.png" />
+    <None Include="Resources\demomenu_imagewhirligig.png" />
+    <None Include="Resources\demomenu_multidropslidebar.png" />
+    <None Include="Resources\demomenu_radianmenu.png" />
+    <None Include="Resources\demomenu_tooltip.png" />
+    <None Include="Resources\demomenu_windowalert.png" />
+    <None Include="Resources\demomenu_date.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

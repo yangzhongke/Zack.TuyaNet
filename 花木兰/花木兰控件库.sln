@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Winform", "Winform", "{257A8B33-0D85-482C-AFA3-3A2B1DADB535}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcleAnimationLibrary", "WcleAnimationLibrary\WcleAnimationLibrary.csproj", "{BCA4D193-8E66-4335-B553-D8778E950688}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinformDemo", "WinformDemo\WinformDemo.csproj", "{E6C4E151-5641-48DE-B87F-C5EBED51ED7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinformControlLibraryExtension", "WinformControlLibraryExtension\WinformControlLibraryExtension.csproj", "{35145425-D3A3-43E1-BD52-D3446BD37974}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCA4D193-8E66-4335-B553-D8778E950688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA4D193-8E66-4335-B553-D8778E950688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA4D193-8E66-4335-B553-D8778E950688}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BCA4D193-8E66-4335-B553-D8778E950688}.Debug|x86.Build.0 = Debug|Any CPU
+		{BCA4D193-8E66-4335-B553-D8778E950688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA4D193-8E66-4335-B553-D8778E950688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCA4D193-8E66-4335-B553-D8778E950688}.Release|x86.ActiveCfg = Release|Any CPU
+		{BCA4D193-8E66-4335-B553-D8778E950688}.Release|x86.Build.0 = Release|Any CPU
+		{E6C4E151-5641-48DE-B87F-C5EBED51ED7B}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E6C4E151-5641-48DE-B87F-C5EBED51ED7B}.Debug|Any CPU.Build.0 = Debug|x86
+		{E6C4E151-5641-48DE-B87F-C5EBED51ED7B}.Debug|x86.ActiveCfg = Debug|x86
+		{E6C4E151-5641-48DE-B87F-C5EBED51ED7B}.Debug|x86.Build.0 = Debug|x86
+		{E6C4E151-5641-48DE-B87F-C5EBED51ED7B}.Release|Any CPU.ActiveCfg = Release|x86
+		{E6C4E151-5641-48DE-B87F-C5EBED51ED7B}.Release|x86.ActiveCfg = Release|x86
+		{E6C4E151-5641-48DE-B87F-C5EBED51ED7B}.Release|x86.Build.0 = Release|x86
+		{35145425-D3A3-43E1-BD52-D3446BD37974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35145425-D3A3-43E1-BD52-D3446BD37974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35145425-D3A3-43E1-BD52-D3446BD37974}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{35145425-D3A3-43E1-BD52-D3446BD37974}.Debug|x86.Build.0 = Debug|Any CPU
+		{35145425-D3A3-43E1-BD52-D3446BD37974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35145425-D3A3-43E1-BD52-D3446BD37974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35145425-D3A3-43E1-BD52-D3446BD37974}.Release|x86.ActiveCfg = Release|Any CPU
+		{35145425-D3A3-43E1-BD52-D3446BD37974}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E6C4E151-5641-48DE-B87F-C5EBED51ED7B} = {257A8B33-0D85-482C-AFA3-3A2B1DADB535}
+		{35145425-D3A3-43E1-BD52-D3446BD37974} = {257A8B33-0D85-482C-AFA3-3A2B1DADB535}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4C6FB8B-CE85-4A69-9A2A-EF616FDE97B0}
+	EndGlobalSection
+EndGlobal

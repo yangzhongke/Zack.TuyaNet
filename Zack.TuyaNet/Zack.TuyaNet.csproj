@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <LangVersion>10</LangVersion>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <Authors>ZhongKe Yang</Authors>
+	  <Company>Zack Yang</Company>
+	  <Description>This a .NET SDK(.NET Standard 2.0) of Tuya Cloud API.
+这是涂鸦云API的.NET SDK（.NET Standard 2.0）</Description>
+	  <PackageProjectUrl>https://github.com/yangzhongke/Zack.TuyaNet</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/yangzhongke/Zack.TuyaNet</RepositoryUrl>
+	  <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+    <PackageReference Include="System.Text.Json" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
