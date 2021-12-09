@@ -7,8 +7,8 @@ ServiceCollection services = new ServiceCollection();
 services.AddHttpClient();
 services.AddOptions().Configure<TuyaConfig>(opt => {
     opt.Region = Region.China;
-    opt.AccessId = "xxxxxxxxxxxxxxxxxxxxxxxx";
-    opt.ApiSecret = "xxxxxxxxxxxxxxxxxxxxxxxxxxx";
+    opt.AccessId = "5u9crcv9b5jgi15kkuoa";
+    opt.ApiSecret = "8ad4c009922149039a68d8223691abb6";
 });
 services.AddScoped<TuyaApiClient>();
 services.AddScoped<SwitchDevice>();

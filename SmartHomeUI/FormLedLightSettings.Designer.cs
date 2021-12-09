@@ -106,6 +106,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.timePickerWakeUp);
             this.Controls.Add(this.labe1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormLedLightSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Led灯设置";
